@@ -1,0 +1,336 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style:none;
+}
+
+a{
+  text-decoration:none;
+  color:#600000;
+}
+
+body{
+  background:#FCFCFC;
+}
+
+.header{
+  height: 80px;
+  width: 100%;
+  background: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.nav-box{
+  max-width: 1200px;
+  margin:0 auto;
+  display: flex;
+  height: 40px;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  color:#000000;
+}
+
+.nav-box .nav{
+  display:flex;
+  font-size: 16px;
+  color:#6C6C6C
+}
+
+.nav-box .nav li{
+  padding-left: 40px;
+}
+
+.nav-box .nav li .on,.nav-box .nav a:hover{
+  color:#6C6C6C;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000000;
+}
+
+.banner{
+  width: 1200px;
+  margin: 0 auto;
+  background: url(https://pbs.twimg.com/profile_banners/1289246266333880321/1778593778/1500x500) no-repeat center center;
+  height: 312px;
+  text-align:center;
+  line-height: 312px;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.intro{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.intro-tit{
+  line-height: 50px;
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  margin-left: 10px;
+  color:#6C6C6C;
+}
+
+.intro-main{
+  display: flex;
+}
+
+.intro-main .pic{
+  margin-right: 60px;
+}
+
+.intro-main .pic img{
+  border-radius: 50%;
+}
+
+.intro-main .r{
+  line-height: 60px;
+  font-size: 20px;
+  color: #6C6C6C;
+}
+
+.intro-main .r .hyw{
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.in-box,
+.exp,
+.s-box{
+  display:flex;
+}
+
+.in-box,
+.exp,
+.s-box img{
+  margin-left: 10px;
+}
+
+.exp{
+  
+}
+
+.r-box{
+  magrin-left: 40px;
+  line-height: 28px;
+}
+
+.r-box .tit{
+  font-size: 20px;
+  font-weight: 600;
+  color: #5B5B5B;
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+
+.r-box .small{
+  font-size: 18px;
+  color: #8E8E8E;
+  margin-left: 20px;
+}
+
+.r-box .time{
+  height: 40px;
+  line-height: 40px;
+  background: #000000;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-top: 15px;
+  display:flex;
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+.r-box .time .icon{
+  width: 40px;
+  height: 40px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANAAAACUCAMAAADVs1c8AAAAZlBMVEUAAAD///8HBwfx8fGkpKTl5eUvLy+Dg4Otra3Z2dlLS0t/f3+zs7PV1dUhISFoaGi6urr5+fnr6+txcXE+Pj5XV1dDQ0OSkpIXFxfPz88bGxspKSlhYWEODg7ExMRSUlI3NzecnJzYi/a8AAAEA0lEQVR4nO2c4ZqqIBBAJTEz01IzM83y/V/yru1Wg19tCAxy95vzM3cazkIKKuN5BEEQBEEQhAJ7HmR5157lIxZll/sB3+O1SYdtxm5slrIRDf+OYCFmu1Rp2Z3NUS7izB8hBW7blMgfrWNbuYjyGZFNGKeWeHYQY51cyAaExLitU4CD1mVyIaBP2Qa3dQrAfzeTC4ERO9zWKUBCJGQZEnJR6HQo2yK+UdSweT8f/k4BI5J7SFse0pl0DkWfZMw4WcSL9Rw6Vf25caoklW2lY4yoc1MKrQ68K/dxfRjzN1eLPh3Cb2dMVh9s+Sw7fJ2BRHqlqMdx87ktZuhOVoRiWz6MVTZ8Gns+jNm4fWLpB/RNhO9ztenD2AVdaDfKmEc3EuHClEQSJDDC/wnJxW9nNbqQeAUKeHFZD1yFkbhfS7CHEd319tml6CPRSPKWmDKtkK1uHweMLR9KcQxg3w6CN3dYDk5C5tZDjdBHkrfElBGXPeCAwQVeCQ8EJlv/ggB2EBzfBoXOsIt8k61/ATyZdfD+rUGhxWomodUCHDApBH+o/uJtvAkWb4UqcEBy3MML0QomcUIIXlW43JfB/wGcEbghBKYQ/lXuy9LntECYEDgilN5HUB7LtqG4GwXCrNoRIe+6Gc7pWR1LP7xaFN3wfflOnIK6IuR526qq4klLmGX8FVKM5mvuCJlKQkIauUhIJQkJaeQiIZUkJKSRi4RUkpCQRi5BCCvLXEJ+gIQ/k5AVSIiESIiESIiESIiE3BCKOBLJTEKSDxmm088k9PfWQyQkmYSENHKRkEoSEtLIRUIqSUhII9fvQqdU4KTWGGeEDuEuEehCpT0Zrght4atnPwQqLyQ6ItS+3g+hsCnaEaEX/TOQT38L1g2hcmyi3kVuCPGxyOOvpidxQujtlpXp+x9JSAMSIiGPhLQgIRLySEgLEiIhz3mh6SWI3BAqxiJ3pm9/dkPIe1eR4H9dsQq7gbQ6yBUhj493CQ/N4Qp11lwR8opdIr7IF+1Clbpxzgh558tW4KK279kdIVNJSEgjFwmpJLEo9H6nsUFEIZwcD/50D9VIxUkXsEQEdg/BZwxZg5PjBKccOU6OB0KBiB4nRwhzJDg5HvQwGU6J363wkiF2RdeDIJT35ou6hOKTs/ZzhB7ilDqrV1VokIrX4kugklV6NRDH3HAaMsp4mYi2R+nJWAgXC2Wre5s+VsqfvnncjQH2VfWbiz0h9FPcjUVooeTkQNZbKvx+6q28X59xa6VO0+rFDR7T+D3SVPEVxyL53CI9othOCc0761d34czhr/BrGY5Iyx7t/J3zco4S1cd9+TXzMnzGy/yatwe7ow1wTptmaZSmSbGrMhIEQRAEQfwZ/gEN2Et2iVKsFQAAAABJRU5ErkJggg==) no-repeat center center;
+  background-size: 24px;
+}
+
+.s-box .tit{
+  line-height: 40px;
+  padding-bottom: 10px;
+  margin-bottom: 2px;
+  
+}
+
+.s-box .p{
+  width: 300%;
+  height: 6px;
+  border-radius: 5px;
+  background: #BEBEBE;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.foot-box{
+  width: 100%;
+  height: 100%;
+  line-height: 100px;
+  text-align: center;
+  font-size: 12px;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.main-box{
+  width: 1000px;
+  margin: 20px auto;
+  
+}
+
+.flex-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.block{
+  width: 300px;
+  height: 300px;
+  position:relative;
+}
+
+.block:hover{
+  opacity: 1;
+}
+
+.block:hover img{
+  transform: scale(1.2);
+}
+
+.block .pic{
+  transition: all 0.3s ease-in;
+}
+
+/* 40px */
+.toTop-arrow {
+width: 2.5rem;
+height: 2.5rem;
+padding: 0;
+margin: 0;
+border: 0;
+border-radius: 33%;
+opacity: 0.6;
+background: #000;
+cursor: pointer;
+position:fixed;
+right: 1rem;
+bottom: 1rem;
+display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+width: 18px;
+height: 5px;
+border-radius: 3px;
+background: #f90;
+position: absolute;
+content: "";
+}
+.toTop-arrow::before {
+transform: rotate(-45deg) translate(0, -50%);
+left: 0.5rem;
+}
+.toTop-arrow::after {
+transform: rotate(45deg) translate(0, -50%);
+right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+/* 隱藏原本的checkbox */
+#darkmode {
+  display: none;
+}
+
+/* 開關背景 */
+.theme-switch label {
+  display: block;
+  width: 70px;
+  height: 35px;
+  background-color: #ccc;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* 白色圓球 */
+.theme-switch label::after {
+  content: "";
+  width: 29px;
+  height: 29px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+/* 開啟時 */
+#darkmode:checked + label {
+  background-color: #333;
+}
+
+#darkmode:checked + label::after {
+  left: 38px;
+}
+
+@media screen and (max-width: 1199px){
+  body{
+    min-width: 100%;
+  }
+  .nav-box{
+    width: 100%;
+  }
+  .nav-box span{
+    display: none;
+  }
+  .banner{
+    width: 100%;
+    height: 152px;
+    line-height: 152px;
+    font-size: 18px;
+  }
+  .intro{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .intro .pic img{
+    width: 120px;
+  }
+  .main-box{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .flex-box{
+    flex-wrap: wrap;
+  }
+  .block{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    margin-bottom: 20px;
+  }
+  intro-tit{
+    font-size: 18px;
+  }
+}
